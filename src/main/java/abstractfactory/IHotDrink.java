@@ -1,5 +1,5 @@
 package abstractfactory;
 
 public interface IHotDrink {
-    void consume();
+    public void consume();
 }
