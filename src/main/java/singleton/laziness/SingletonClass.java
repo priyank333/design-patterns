@@ -4,6 +4,7 @@ public class SingletonClass {
     private SingletonClass() {
         System.out.println("Initializing singleton object");
     }
+
     private static SingletonClass singletonClass;
 //    public static SingletonClass getInstance() {
 //        if (singletonClass == null) {
