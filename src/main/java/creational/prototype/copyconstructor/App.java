@@ -13,6 +13,7 @@ public class App {
         Employee emp1 = new Employee("1", new Address("LA ROAD", "12345"));
         Employee emp2 = new Employee(emp1);
 
-        System.out.println("Is both object has same address : " + (emp1 == emp2));
+        System.out.println("Is both object has same address : " + (emp1.address == emp2.address));
+        System.out.println("Is both objects are same : " + (emp1 == emp2));
     }
 }
