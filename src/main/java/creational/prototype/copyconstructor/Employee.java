@@ -10,7 +10,7 @@ public class Employee {
     }
 
     public Employee(Employee other) {
-        this(other.empId, other.address);
+        this(other.empId, new Address(other.address));
     }
 
     @Override
