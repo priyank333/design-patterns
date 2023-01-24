@@ -17,12 +17,14 @@ package structural.facade;
 public class Demo {
     public static void main(String[] args) {
 
-        //Instead of writing this much code just create new static method in Console class, which gives new console
-//        Buffer buffer = new Buffer(30, 20);
-//        Viewport viewport = new Viewport(buffer, 30, 20, 0, 0);
-//        Console console = new Console(30, 20);
-//        console.addViewPort(viewport);
-//        console.render();
+
+        //Instead of writing this much code just create new static method in Console class, which gives a new console.
+        /*Buffer buffer = new Buffer(30, 20);
+        Viewport viewport = new Viewport(buffer, 30, 20, 0, 0);
+        Console console = new Console(30, 20);
+        console.addViewPort(viewport);
+        console.render();
+        */
 
 
         Console console2 = Console.newConsole(45, 54);
