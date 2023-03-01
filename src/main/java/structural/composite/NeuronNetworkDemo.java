@@ -1,7 +1,5 @@
 package structural.composite;
 
-import java.util.Collections;
-
 public class NeuronNetworkDemo {
     public static void main(String[] args) {
         Neuron neuron1 = new Neuron();

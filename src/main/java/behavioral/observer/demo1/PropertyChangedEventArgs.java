@@ -1,4 +1,4 @@
-package other.observer.demo1;
+package behavioral.observer.demo1;
 
 public class PropertyChangedEventArgs {
     public Object source;

@@ -1,11 +1,11 @@
 package creational.singleton.laziness;
 
 public class SingletonClass {
+    private static SingletonClass singletonClass;
+
     private SingletonClass() {
         System.out.println("Initializing singleton object");
     }
-
-    private static SingletonClass singletonClass;
 //    public static SingletonClass getInstance() {
 //        if (singletonClass == null) {
 //            singletonClass = new SingletonClass();

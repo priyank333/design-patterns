@@ -3,11 +3,12 @@ package creational.singleton.enumsingleton;
 public enum EnumSingleton {
     INSTANCE;
 
+    private int value;
+
     EnumSingleton() {
         value = 10;
     }
 
-    private int value;
     public int getValue() {
         return value;
     }

@@ -3,11 +3,10 @@ package creational.singleton.serializationproblem;
 import java.io.Serializable;
 
 public class BasicSingleton implements Serializable {
-    private BasicSingleton() {
-    }
-
     private static final BasicSingleton INSTANCE = new BasicSingleton();
     private int value;
+    private BasicSingleton() {
+    }
 
     public static BasicSingleton getInstance() {
         return INSTANCE;

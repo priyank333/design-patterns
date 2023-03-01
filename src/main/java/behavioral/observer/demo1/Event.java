@@ -1,4 +1,4 @@
-package other.observer.demo1;
+package behavioral.observer.demo1;
 
 import java.util.HashMap;
 import java.util.Map;

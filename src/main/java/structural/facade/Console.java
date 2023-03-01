@@ -4,12 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Console {
-    private List<Viewport> viewports = new ArrayList<>();
     int widht, height;
+    private List<Viewport> viewports = new ArrayList<>();
 
     public Console(int widht, int height) {
         this.widht = widht;
         this.height = height;
+    }
+
+    public static Console newConsole(int widht, int height) {
+        Buffer buffer = new Buffer(widht, height);
+        Viewport viewport = new Viewport(buffer, widht, height, 0, 0);
+        Console console = new Console(widht, height);
+        console.addViewPort(viewport);
+        return console;
     }
 
     public void addViewPort(Viewport viewport) {
@@ -25,13 +33,5 @@ public class Console {
             }
             System.out.println();
         }
-    }
-
-    public static Console newConsole(int widht, int height) {
-        Buffer buffer = new Buffer(widht, height);
-        Viewport viewport = new Viewport(buffer, widht, height, 0, 0);
-        Console console = new Console(widht, height);
-        console.addViewPort(viewport);
-        return console;
     }
 }

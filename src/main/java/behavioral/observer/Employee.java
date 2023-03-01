@@ -1,4 +1,4 @@
-package other.observer;
+package behavioral.observer;
 
 public class Employee extends Observable<Employee> {
     private String name;

@@ -11,13 +11,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public class HotDrinkMachine {
-    public enum AvailableDrink {
-        TEA, COFFEE
-    }
-
     private Map<AvailableDrink, IHotDrinkFactory> factories = new HashMap<>();
     private List<Pair<String, IHotDrinkFactory>> namedFactories = new ArrayList<>();
-
     public HotDrinkMachine() {
 
         // option 1: use an enum
@@ -90,5 +85,9 @@ public class HotDrinkMachine {
             }
             System.out.println("Incorrect input, try again.");
         }
+    }
+
+    public enum AvailableDrink {
+        TEA, COFFEE
     }
 }

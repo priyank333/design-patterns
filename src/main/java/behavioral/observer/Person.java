@@ -1,4 +1,4 @@
-package other.observer;
+package behavioral.observer;
 
 public class Person extends Observable<Person> {
     private int age;

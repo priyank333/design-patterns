@@ -1,4 +1,4 @@
-package other.observer;
+package behavioral.observer;
 
 public class PropertyChangeEventArgs<T> {
     public T source;
