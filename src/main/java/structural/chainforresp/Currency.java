@@ -14,6 +14,4 @@ public class Currency {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-	
-	
 }

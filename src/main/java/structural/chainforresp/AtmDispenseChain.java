@@ -11,7 +11,6 @@ public class AtmDispenseChain {
 		this.d1 = new Dollar50Dispenser();
 		DispenseChain d2 = new Dollar20Dispenser();
 		DispenseChain d3 = new Dollar10Dispenser();
-		
 		d1.setNextChain(d2);
 		d2.setNextChain(d3);
 	}
