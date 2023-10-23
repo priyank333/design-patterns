@@ -9,7 +9,6 @@ import creational.singleton.serializationproblem.FileUtility;
  */
 public class App {
     public static void main(String[] args) {
-
         /*
          * First save the object in the storage. Comment line# 13 to 15 and if we read value from stored object
          * we will get different value.
